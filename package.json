@@ -1,0 +1,26 @@
+{
+  "name": "vessel-lite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "dotenv -e .env -- ts-node-dev --respawn --transpile-only --exit-child src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cors": "^8.3.0",
+    "@vesselapi/sdk": "^1.0.26",
+    "dotenv-cli": "^7.2.1",
+    "fastify": "^4.21.0",
+    "radash": "^11.0.0",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.5",
+    "typescript": "^5.1.6"
+  }
+}
